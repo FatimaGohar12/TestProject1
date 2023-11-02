@@ -230,18 +230,7 @@ const NAV_ITEMS = [
     label: "Payments",
     href: "#",
   },
-  {
-    label: "Testimonals",
-    href: "#",
-  },
-  {
-    label: "Samples",
-    href: "#",
-  },
-  {
-    label: "ContactUs",
-    href: "#",
-  },
+
 ];
 
 export default Navigation;

@@ -22,14 +22,14 @@ const Box5 = () => {
   return (
     <>
       <Flex
-        border="1px solid black"
+        // border="1px solid black"
         width="80%"
         height= "400px" 
         margin="auto"
         flexDir="column"
       >
         <Flex
-          border="1px solid black"
+          // border="1px solid black"
           width="100%"
           height="50px"
           alignItems={{ base: "center", lg: "self-end" }}
@@ -46,7 +46,7 @@ const Box5 = () => {
           </Heading>
         </Flex>
         <Flex
-          border="1px solid black"
+          // border="1px solid black"
           height="121px"
           width="97%"
           flexDir="column"
@@ -61,7 +61,7 @@ const Box5 = () => {
           </Text>
         </Flex>
         <Flex
-          border="1px solid black"
+          // border="1px solid black"
           height="121px"
           width="97%"
           flexDir="column"
@@ -74,7 +74,7 @@ const Box5 = () => {
           </Text>
         </Flex>
         <Flex
-          border="1px solid black"
+          // border="1px solid black"
           height="121px"
           width="97%"
           flexDir="column"

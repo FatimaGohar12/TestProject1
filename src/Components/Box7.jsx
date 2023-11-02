@@ -11,14 +11,14 @@ const Box7 = () => {
     flexDir={{base:"column-reverse",lg:"row",md:"column-reverse"}}
     //   width="100%"
       height={{base:"500px",lg:"312px"}}
-      border="1px solid black"
+      // border="1px solid black"
       alignItems="center"
       justifyContent="space-evenly"
       backgroundImage={`url(${bgImage})`}
       backgroundSize="cover" 
     >
       <Flex
-        border="1px solid white"
+        // border="1px solid white"
         width={{base:"47%",lg:"20%"}}
         height="212px"
         alignItems="center"
@@ -47,7 +47,9 @@ const Box7 = () => {
           </Box>
         </Stack>
       </Flex>
-      <Flex width="70%" height="212px" border="1px solid white"
+      <Flex width="70%" height="212px" 
+      
+      // border="1px solid white"
       alignItems="center">
         <Text
           color="#FFF"

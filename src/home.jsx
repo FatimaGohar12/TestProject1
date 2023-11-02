@@ -9,6 +9,7 @@ import Box6 from "./Components/Box6";
 import Header from "./Components/Header";
 import MecBg from "./MecBg";
 import Navigation from "./Navigation";
+import ParaBox from "./ParaBox";
 
 const Home = () => {
   const mechanicalEstimationData = [
@@ -41,10 +42,11 @@ const Home = () => {
   ];
   return (
     <>
-    {/* <Header></Header> */}
-    {/* <Navigation/> */}
-       {/* <MecBg/> */}
-       <MedData
+      <Header></Header>
+      <Navigation />
+      <MecBg />
+      <ParaBox />
+      <MedData
         heading={"Mechanical Estimation Data"}
         data={mechanicalEstimationData}
       />
@@ -53,14 +55,14 @@ const Home = () => {
           heading={"Electrical Estimation Data"}
           data={electricalEstimationData}
         />
-      </Flex> 
-      {/* <Box4/>
-      <Box5/>
-      <Box6/>
-      <Box7/>
-      <Footer /> */}
-     
-      
+      </Flex>
+      <Box4 />
+      <Box5 />
+      <Box6 />
+      <Box7 />
+      <Footer />
+
+
     </>
   );
 };

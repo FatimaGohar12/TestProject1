@@ -50,8 +50,8 @@ const Box6 = () => {
   return (
     <>
       <Flex
-        border="1px solid black"
-        width="70%"
+        // border="1px solid black"
+        width="90%"
         height={{ base: "660px", lg: "400px" }}
         margin="auto"
         alignItems="center"
@@ -61,7 +61,7 @@ const Box6 = () => {
         <Flex
           width={{ lg: "55%", base: "97%" }}
           height={{ lg: "380px", base: "538px" }}
-          border="1px solid black"
+          // border="1px solid black"
           alignItems="center"
           justifyContent="space-around"
           flexDir="column"
@@ -69,7 +69,7 @@ const Box6 = () => {
           <Flex
             width="95%"
             height="200px"
-            border="1px solid black"
+            // border="1px solid black"
             flexDir="column"
           >
             <Heading
@@ -99,7 +99,7 @@ const Box6 = () => {
           <Flex
             width="95%"
             height="250px"
-            border="1px solid black"
+            // border="1px solid black"
             flexDir="column"
           >
             <Flex>
@@ -115,7 +115,7 @@ const Box6 = () => {
               </Heading>
             </Flex>
             <Flex
-              border="1px solid black"
+              // border="1px solid black"
               alignItems="flex-start"
               justifyContent="space-around"
             >
@@ -151,7 +151,7 @@ const Box6 = () => {
         <Flex
           width={{ lg: "30%", base: "76%" }}
           height={{ lg: "380px", base: "180px" }}
-          border="1px solid black"
+          // border="1px solid black"
           alignItems="normal"
           justifyContent="space-around"
         >

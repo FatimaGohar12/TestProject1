@@ -25,7 +25,7 @@ const MedData = ({ heading, data }) => {
 
   return (
     <Flex
-      border="1px solid black"
+      // border="1px solid black"
       width={{ base: "100%", lg: "80%" }}
       height={{ base: "1000px", lg: "400px", md: "303px" }}
       margin="auto"
@@ -33,7 +33,7 @@ const MedData = ({ heading, data }) => {
       flexDir="column"
     >
       <Flex
-        border="1px solid black"
+        // border="1px solid black"
         width="100%"
         height="100px"
         alignItems={{ base: "center", lg: "self-end" }}
@@ -52,7 +52,7 @@ const MedData = ({ heading, data }) => {
         </Heading>
       </Flex>
       <Flex
-        border="1px solid orange"
+        // border="1px solid orange"
         width={{lg:"90%",md:"100%"}}
         height={{ lg: "361px", base: "911px" }}
         alignItems="center"

@@ -1,4 +1,4 @@
-import { Button, Card, Flex, Heading, Image } from "@chakra-ui/react";
+import { Button, Flex, Heading, Image, useBreakpointValue } from "@chakra-ui/react";
 import React from "react";
 
 const Box4 = () => {
@@ -21,65 +21,58 @@ const Box4 = () => {
     },
   ];
 
+  // Determine the number of cards to display per row based on screen size
+  const cardsPerRow = useBreakpointValue({ base: 1, sm: 2, md: 3, lg: 4 });
+
   return (
     <Flex
-      // border="1px solid black"
-      width="70%"
-      height="400px"
-      margin="auto"
-      flexDir="column"
-      justifyContent="space-around"
+      width="100%"
+      flexDirection="column"
+      justifyContent="center"
       alignItems="center"
+      p={{ base: "4", md: "8" }} // Adjust padding based on screen size
     >
-      <Flex
-        // border="1px solid black"
-        width="80%"
-        height="70px"
-        flexDir="column"
-        justifyContent="center"
-        alignItems="center"
+      <Heading
+        color="#FF7518"
+        fontFamily="Segoe UI"
+        fontSize={{ base: "24px", md: "40px" }}
+        fontStyle="normal"
+        fontWeight="900"
+        lineHeight="normal"
+        textAlign="center"
+        mb="4"
       >
-        <Heading
-          color="#FF7518"
-          fontFamily="Segoe UI"
-          fontSize="40px"
-          fontStyle="normal"
-          fontWeight="900"
-          lineHeight="normal"
-        >
-          Take a look at our Trades
-        </Heading>
-      </Flex>
+        Take a look at our Trades
+      </Heading>
+
       <Flex
-        flexDir="row"
-        alignItems="center"
-        width="88%"
-        height="407px"
-        justifyContent="space-around"
+        flexDirection="row"
+        flexWrap="wrap"
+        justifyContent="center"
+        width="100%"
       >
         {cardData.map((card, index) => (
           <Flex
             key={index}
-            // border="1px solid black"
-            width="23%"
-            height="250px"
-            alignItems="baseline"
-            style={{ position: "relative" }}
+            // width={{ base: "59%", sm: `calc(50% - 10px)`, md: `calc(33.33% - 10px)`, lg: `calc(25% - 10px)` }}
+            my="4"
+            flexDirection="column"
+            alignItems="center"
+            justifyContent="space-between"
+            position="relative"
           >
-            <Image src={card.image} />
+            <Image src={card.image} boxSize="200px" mb="4" />
+
             <Button
-              style={{
-                position: "absolute",
-                top: "84%",
-                left: "50%",
-                transform: "translate(-50%, -50%)",
-                borderRadius: "15px",
-                background: "#2F2F2F",
-                // border: "1px solid black",
-                width: "100%",
-                height: "80px",
-                color: "white",
-              }}
+              position="absolute"
+              bottom="0"
+              left="50%"
+              transform="translateX(-50%)"
+              borderRadius="15px"
+              background="#2F2F2F"
+              width="100%"
+              height="60px"
+              color="white"
             >
               {card.text}
             </Button>
